@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: chair_and_hammer_remodel.ma
-//Last modified: Sat, Sep 02, 2023 07:37:35 PM
+//Last modified: Sat, Sep 02, 2023 07:42:42 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
@@ -10,10 +10,10 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "04FA36D9-4DB8-D963-A7BB-ECA872E2CEE5";
+fileInfo "UUID" "FCB0B6C1-44BA-4DAB-43C6-F5BA3995D71F";
 createNode transform -s -n "persp";
 	rename -uid "68C8E96E-479E-7917-74C4-6BADB83A59B0";
-	setAttr ".t" -type "double3" -2.1111679737282043 6.967904742261255 8.0865807904442732 ;
+	setAttr ".t" -type "double3" -7.2389055711709318 13.255938233204478 24.449211362178762 ;
 	setAttr ".r" -type "double3" -20.138352729506401 1062.6000000001209 -1.666537551607558e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "B4546711-4A67-5508-0A04-F78572D291C0";
@@ -22,7 +22,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.0032808398950131233;
 	setAttr ".fcp" 328.08398950131232;
 	setAttr ".fd" 0.16404199475065617;
-	setAttr ".coi" 7.7069797590855496;
+	setAttr ".coi" 25.970844007335739;
 	setAttr ".ow" 0.32808398950131235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -128,6 +128,7 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".pt[115]" -type "float3" 6.2577058e-08 0 0 ;
 createNode transform -n "hammer_mesh";
 	rename -uid "80518F08-4927-370C-5AD0-3191D59C3C00";
+	setAttr ".t" -type "double3" -7.8789820604432066 0 -8.8376150324820646 ;
 	setAttr ".rp" -type "double3" 0 3.5647128938347139 0 ;
 	setAttr ".sp" -type "double3" 0 3.5647128938347139 0 ;
 createNode mesh -n "hammerIthink" -p "hammer_mesh";
